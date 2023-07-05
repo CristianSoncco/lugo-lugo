@@ -79,5 +79,15 @@
     <li>Caudal Fest (septiembre)</li>
     <li>Semana Cultural (mayo)</li>
   </ul>
+  <script>
+    // JavaScript para la interactividad
+    const listItems = document.querySelectorAll("li");
+
+    listItems.forEach(item => {
+      item.addEventListener("click", () => {
+        item.style.textDecoration = "line-through";
+      });
+    });
+  </script>
 </body>
 </html>
